@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Watched It</title>
+    <link th:href="@{/styles.css}" rel="stylesheet" />
+</head>
+<body>
+
+<ul>
+    <li th:each="film : ${films}">
+        <span class="id" th:text="${film.id}"></span>
+        <span th:text="${film.title}"></span>
+        <hr>
+    </li>
+</ul>
+</body>
+</html>
