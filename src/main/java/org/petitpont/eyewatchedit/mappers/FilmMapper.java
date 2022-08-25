@@ -3,9 +3,9 @@ package org.petitpont.eyewatchedit.mappers;
 import org.petitpont.eyewatchedit.models.dtos.FilmDTO;
 import org.petitpont.eyewatchedit.models.entities.Film;
 import org.petitpont.eyewatchedit.models.forms.FilmAddForm;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class FilmMapper {
 
     public FilmDTO toDTO(Film entity) {
